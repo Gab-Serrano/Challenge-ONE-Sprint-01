@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador Online</title>
+</head>
+<body>
+    <header>
+        <img src="images/Vector.png" alt="Logo de alura con la inicial de la letra a">
+    </header>
+    <main>
+        <section id="input-encriptador">
+            <textarea class="input-user"
+                      cols="40" rows="6"
+                      placeholder="Ingrese el texto por encriptar aquí.">
+            </textarea>
+            <div>
+                <button class="boton-encriptar"
+                        onclick="encriptarMensaje()">
+                    Encriptar
+                </button>
+                <button class="boton-desencriptar"
+                        onclick="desencriptarMensaje()">
+                    Desencriptar
+                </button>
+            </div>
+        </section>
+        <section id="pantalla-resultado">
+            <textarea class="resultado"
+                      cols="18"
+                      rows="8">
+            </textarea>
+            <button class="copiar-texto"
+                    onclick="copiarTexto()">
+                Copiar
+            </button>
+        </section>
+    </main>
+</body>
+</html>
